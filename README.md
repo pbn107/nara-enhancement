@@ -62,3 +62,26 @@ git pull
 
 ---
 Happy coding, and good luck with Nara! 🦌
+
+## 1. Speech‑Bubble Encouragement  
+Whenever the user completes a task, a brief, positive message “pops up” above the checked item to reinforce good habits and boost motivation.  
+- **Randomized Messages**  
+  A small set of encouraging phrases (e.g. “Great job!”, “You’re making progress!”, “Keep going!”) is chosen at random each time.  
+- **Contextual Positioning**  
+  The bubble is positioned just above the task in the list, making it clear which action triggered the praise.  
+- **Animated Fade‑Out**  
+  Each bubble uses a CSS transition to appear instantly, then fade out smoothly over 0.8 seconds before being removed from the DOM.  
+
+### 2. Daily Gratitude Log  
+A dedicated modal allows users to record one thing they’re grateful for each day, fostering mindfulness and positive reflection.  
+- **Seamless Entry**  
+  Click **“Add Gratitude”** to open a modal with a labeled textarea. Users type their entry and click **Save**, which stores the text under today’s date in `chrome.storage.local`.  
+- **Persistent Storage**  
+  Entries are saved by ISO date (e.g. `2025-04-20`) and remain available even after the browser is closed or the extension is reloaded.  
+- **History View**  
+  The **“View Gratitude Log”** button opens a scrollable modal listing all past entries, newest first. Each entry displays the date in bold followed by the user’s text.  
+- **Responsive Styling**  
+  Both entry and history modals are styled for clarity: a semi‑transparent dark overlay, a centered white content box with rounded corners, clear labels, and accessible focus states.  
+
+---
+
